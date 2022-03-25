@@ -1,0 +1,92 @@
+html,
+body{
+  height: 100%;
+  background-color: brown;
+  font-size: 20px;
+  /* line-height: 20px; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.calendar_btn {
+  display: none;
+  background-color: #fff;
+  border-radius: 13px;
+  padding: 5px;
+}
+.calendar-btn__dey {
+  color: red;
+}
+.calendar-btn__number {
+  line-height: 40px;
+  font-size: 40px;
+}
+/* --------------- */
+.calendar-popap{
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
+
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+}
+/* -------------------------- */
+.calendar__month-wrapper{
+  display: grid;
+  grid-template-columns:  repeat(auto-fill, minmax(152px, 1fr));
+  gap: 20px;
+  background-color: #7d7979;
+  max-width: 700px;
+  overflow: hidden;
+
+  
+}
+.calendar__month-inner {
+  border: 1px solid transparent;
+  background-color: #000;
+  transition: all .3s;
+}
+.calendar__month-inner._active {
+  border: 1px solid #fff;
+  transition: all .3s;
+}
+
+.calendar__month-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+  padding-left: 2px;
+}
+.calendar__month-name._active {
+  color: red;
+}
+.calendar__list {
+  text-align: center;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+.calendar__dey {
+  border-radius: 3px;
+  padding: 1px;
+}
+.calendar__dey._active {
+  background-color: #37474f;
+}
+.calendar__dey._selected {
+  background-color: red;
+}
+.calendar__dey.color-non {
+  background-color: transparent;
+}
+

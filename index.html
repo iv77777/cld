@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calendar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<button class="calendar-btn">
+  <p class="calendar-btn__dey">Четверг</p>
+  <p class="calendar-btn__number">24</p>
+</button>
+
+<div class="calendar-popap">
+  <div class="calendar__month-wrapper calendar__month-wrapper_js">
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Ciчень</div>
+      <ul class="calendar__list">
+
+        <!-- <li class="calendar__dey">пн</li>
+        <li class="calendar__dey">вт</li>
+        <li class="calendar__dey">ср</li>
+        <li class="calendar__dey">чт</li>
+        <li class="calendar__dey">пт</li>
+        <li class="calendar__dey">сб</li>
+        <li class="calendar__dey">нд</li> -->
+
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+     <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Лютий</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name _active">Березень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey _selected">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Квiтень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Травень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Червень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Липень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Cерпень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Вересень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Жовтень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Листопад</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div>
+    <div class="calendar__month-inner calendar__month-inner_js">
+      <div class="calendar__month-name">Грудень</div>
+      <ul class="calendar__list">
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey color-non"></li>
+        <li class="calendar__dey _active">1</li>
+        <li class="calendar__dey">2</li>
+        <li class="calendar__dey">3</li>
+        <li class="calendar__dey _active">4</li>
+        <li class="calendar__dey">5</li>
+        <li class="calendar__dey">6</li>
+        <li class="calendar__dey">7</li>
+        <li class="calendar__dey">8</li>
+        <li class="calendar__dey">9</li>
+        <li class="calendar__dey">10</li>
+        <li class="calendar__dey">11</li>
+        <li class="calendar__dey">12</li>
+        <li class="calendar__dey">13</li>
+        <li class="calendar__dey">14</li>
+        <li class="calendar__dey">15</li>
+        <li class="calendar__dey">16</li>
+        <li class="calendar__dey">17</li>
+        <li class="calendar__dey">18</li>
+        <li class="calendar__dey">19</li>
+        <li class="calendar__dey">20</li>
+        <li class="calendar__dey _active">21</li>
+        <li class="calendar__dey">22</li>
+        <li class="calendar__dey">23</li>
+        <li class="calendar__dey">24</li>
+        <li class="calendar__dey">25</li>
+        <li class="calendar__dey">26</li>
+        <li class="calendar__dey">27</li>
+        <li class="calendar__dey">28</li>
+        <li class="calendar__dey">29</li>
+        <li class="calendar__dey">30</li>
+        <li class="calendar__dey">31</li>
+      </ul>
+    </div> 
+  </div>
+</div> 
+
+<script src="./js.js"></script>
+</body>
+</html>
+
+        
+
+        
+
+        
+
+        
